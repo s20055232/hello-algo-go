@@ -84,9 +84,9 @@ func (bst *binarySearchTree) search(num int) *TreeNode {
 	node := bst.root
 	for node != nil {
 		if node.Val.(int) < num {
-			node = node.Left
-		} else if node.Val.(int) > num {
 			node = node.Right
+		} else if node.Val.(int) > num {
+			node = node.Left
 		} else {
 			break
 		}
@@ -139,13 +139,9 @@ func (bst *binarySearchTree) remove(num int) {
 			cur = cur.Left
 		}
 	}
-	fmt.Println("previous node is:", pre)
-	fmt.Println("current node is:", cur)
 	if cur == nil {
 		return
 	}
-	fmt.Println("previous node is:", pre)
-	fmt.Println("current node is:", cur)
 	if cur.Left == nil || cur.Right == nil {
 		// use child to catch child node
 		var child *TreeNode
