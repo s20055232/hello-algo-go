@@ -12,24 +12,24 @@ func TestBinarySearchTree(t *testing.T) {
 		bst.insert(num)
 	}
 	fmt.Println("binary tree initialize:")
-	bst.print()
+	bst.Print()
 
 	node := bst.search(7)
 	fmt.Println("The node that was found is ", node, ", node value is = ", node.Val)
 
 	bst.insert(16)
 	fmt.Println("binary tree after a new node was inserted:")
-	bst.print()
+	bst.Print()
 
 	bst.remove(1)
 	fmt.Println("binary tree after the node 1 was deleted:")
-	bst.print()
+	bst.Print()
 
 	bst.remove(2)
 	fmt.Println("binary tree after the node 2 was deleted:")
-	bst.print()
+	bst.Print()
 
 	bst.remove(4)
 	fmt.Println("binary tree after the node 4 was deleted:")
-	bst.print()
+	bst.Print()
 }

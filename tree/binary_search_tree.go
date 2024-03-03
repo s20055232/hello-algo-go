@@ -70,7 +70,7 @@ func newBinaryTree() *binarySearchTree {
 	return bst
 }
 
-func newTreeNode(v any) *TreeNode {
+func NewTreeNode(v any) *TreeNode {
 	return &TreeNode{
 		Val: v, Height: 0, Left: nil, Right: nil,
 	}
@@ -96,7 +96,7 @@ func (bst *binarySearchTree) search(num int) *TreeNode {
 
 func (bst *binarySearchTree) insert(num int) {
 	cur := bst.root
-	newNode := newTreeNode(num)
+	newNode := NewTreeNode(num)
 	if cur == nil {
 		bst.root = newNode
 		return
@@ -169,6 +169,6 @@ func (bst *binarySearchTree) remove(num int) {
 	}
 }
 
-func (bst *binarySearchTree) print() {
+func (bst *binarySearchTree) Print() {
 	PrintTree(bst.root)
 }
