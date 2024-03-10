@@ -8,7 +8,7 @@
 
    - 學習資料結構跟算法分為三個步驟，此書主要涵蓋第一階段。
 
-      ![image.png](./Hello%20Algo-assets/image.png)
+      ![image.png](./assets/image.png)
 
       1. 算法入門：熟悉各種資料結構的特點跟用法，以及學習不同算法的原理、流程、用途、效率
 
@@ -48,7 +48,7 @@
 
    - 算法要操作資料結構，資料結構沒有算法沒辦法達成結果，兩者密不可分，為了達到最高的效率，**選擇最合適的資料結構，搭配最合適的演算法，才能有最好的結果**
 
-   ![image 1.png](./Hello%20Algo-assets/image%201.png)
+   ![image 1.png](./assets/image%201.png)
 
 + ## 效率評估
 
@@ -133,7 +133,7 @@
       }
       ```
 
-      ![image 2.png](./Hello%20Algo-assets/image%202.png)
+      ![image 2.png](./assets/image%202.png)
 
 + ## Iteration v.s. Recursion
 
@@ -149,7 +149,7 @@
 
    - 大 O 記號（big-$O$ notation）是函數 $T(n)$ 的漸進上界（asymptotic upper bound），同時也是“最差時間複雜度”
 
-   ![image 3.png](./Hello%20Algo-assets/image%203.png)
+   ![image 3.png](./assets/image%203.png)
 
    - 最佳時間複雜度符號為 $Ω$（Omega）
 
@@ -157,7 +157,7 @@
 
    - 時間複雜度由  $T(n)$ 中最高階的項來決定，因為當 $n$ 無限大時，最高階的項將主導，其他項的影響可以忽略
 
-      ![Screenshot 2024-01-26 at 4.17.33 PM.png](./Hello%20Algo-assets/Screenshot%202024-01-26%20at%204.17.33%20PM.png)
+      ![Screenshot 2024-01-26 at 4.17.33 PM.png](./assets/Screenshot%202024-01-26%20at%204.17.33%20PM.png)
 
    - Constant 常數階 $O(1)$
 
@@ -175,23 +175,23 @@
 
       - 每輪都一分為二，就跟細胞分裂一樣
 
-      ![image 4.png](./Hello%20Algo-assets/image%204.png)
+      ![image 4.png](./assets/image%204.png)
 
    - Logarithm 對數階 $O(log\ n)$
 
       - 每輪都縮減一半
 
-      ![image 5.png](./Hello%20Algo-assets/image%205.png)
+      ![image 5.png](./assets/image%205.png)
 
    - 線性對數階 $O(n\ log\ n)$
 
       - 嵌套循環，一層為 $O(log\ n)$、一層為 $O(n)$
 
-      ![image 6.png](./Hello%20Algo-assets/image%206.png)
+      ![image 6.png](./assets/image%206.png)
 
    - 階乘階 $O(n!)$
 
-      ![image 7.png](./Hello%20Algo-assets/image%207.png)
+      ![image 7.png](./assets/image%207.png)
 
 + ## 空間複雜度
 
@@ -215,11 +215,11 @@
 
       - 指令空間：保存編譯後的程式指令，通常忽略不計
 
-   ![image 8.png](./Hello%20Algo-assets/image%208.png)
+   ![image 8.png](./assets/image%208.png)
 
    - 我們通常只關注最差空間複雜度，因為我們要確保資料不能超過記憶體空間
 
-   ![image 9.png](./Hello%20Algo-assets/image%209.png)
+   ![image 9.png](./assets/image%209.png)
 
    - 以算法運行中的峰值為準
 
@@ -231,19 +231,19 @@
 
       - 與數據大小 $n$ 成正比，array、list、stack、queue 等
 
-      ![image 10.png](./Hello%20Algo-assets/image%2010.png)
+      ![image 10.png](./assets/image%2010.png)
 
    - 平方階 $O(n^2)$
 
       - 常見於矩陣、圖，與 $n$ 成平方關係
 
-      ![image 11.png](./Hello%20Algo-assets/image%2011.png)
+      ![image 11.png](./assets/image%2011.png)
 
    - 指數階 $O(2^n)$
 
       - 常見於二叉樹
 
-      ![image 12.png](./Hello%20Algo-assets/image%2012.png)
+      ![image 12.png](./assets/image%2012.png)
 
    - 對數階 $O(log\ n)$
 
@@ -253,17 +253,17 @@
 
    - 邏輯結構：線性與非線性
 
-      ![image 13.png](./Hello%20Algo-assets/image%2013.png)
+      ![image 13.png](./assets/image%2013.png)
 
    - 物理結構：連續與分散
 
       - 系統透過記憶體位置來訪問目標位置的資料
 
-      ![image 14.png](./Hello%20Algo-assets/image%2014.png)
+      ![image 14.png](./assets/image%2014.png)
 
       - 連續空間儲存（Array）和分散空間儲存（Linked List）
 
-      ![image 15.png](./Hello%20Algo-assets/image%2015.png)
+      ![image 15.png](./assets/image%2015.png)
 
    - 物理結構決定了我們的使用方式，雖然我們有很多資料結構可以選用，但現實上，所有資料結構其實都是 Array、Linked List、或是兩者的組合實現的
 
@@ -295,19 +295,19 @@
 
    - Array 需要連續的記憶體空間，且元素必須為同一類型，這需要大量的先驗資訊來換取操作效率
 
-   ![image 16.png](./Hello%20Algo-assets/image%2016.png)
+   ![image 16.png](./assets/image%2016.png)
 
    - 索引的本質是記憶體位址的偏移量，所以訪問速度是 $O(1)$
 
-   ![image 17.png](./Hello%20Algo-assets/image%2017.png)
+   ![image 17.png](./assets/image%2017.png)
 
    - 插入：將所有在插入位置之後的元素都往後移動一位，然後將元素插入該位置
 
-   ![image 18.png](./Hello%20Algo-assets/image%2018.png)
+   ![image 18.png](./assets/image%2018.png)
 
    - 刪除：將索引之後的元素都往前移動一位
 
-   ![image 19.png](./Hello%20Algo-assets/image%2019.png)
+   ![image 19.png](./assets/image%2019.png)
 
    - 搜尋：線性查找，$O(n)$
 
@@ -337,7 +337,7 @@
 
    - linked list 可以讓我們使用不連續的記憶體空間
 
-      ![image 20.png](./Hello%20Algo-assets/image%2020.png)
+      ![image 20.png](./assets/image%2020.png)
 
    - 節點（Node）是由兩個資料組合合成的，一個是節點的數值，一個是指向下一個節點的引用
 
@@ -361,13 +361,13 @@
 
       - 插入節點只需要改變插入位置前後的兩個節點就可以，時間複雜度 $O(1)$，相對 array 的插入 $O(n)$ 來說更為高效
 
-      ![image 21.png](./Hello%20Algo-assets/image%2021.png)
+      ![image 21.png](./assets/image%2021.png)
 
    - 刪除節點
 
       - 刪除節點只需要將原本指向該節點的指針改掉就可以了
 
-         ![image 22.png](./Hello%20Algo-assets/image%2022.png)
+         ![image 22.png](./assets/image%2022.png)
 
       - 雖然說該節點依舊存在，但 linked list 已經訪問不到了，所以也算是刪除，以有 GC 的語言來說，GC 會將沒有使用到的空間清除，所以該 Node 應該會之後被清除
 
@@ -379,7 +379,7 @@
 
       - 從頭遍歷 $O(n)$ 的時間複雜度
 
-   ![Screenshot 2024-02-06 at 6.25.14 PM.png](./Hello%20Algo-assets/Screenshot%202024-02-06%20at%206.25.14%20PM.png)
+   ![Screenshot 2024-02-06 at 6.25.14 PM.png](./assets/Screenshot%202024-02-06%20at%206.25.14%20PM.png)
 
    
 
@@ -409,7 +409,7 @@
 
       - [LRU（Least Recently Used Cache）](https://josephjsf2.github.io/data/structure/and/algorithm/2020/05/09/LRU.html)：請參考[連結](https://josephjsf2.github.io/data/structure/and/algorithm/2020/05/09/LRU.html)中的實現
 
-   ![image 23.png](./Hello%20Algo-assets/image%2023.png)
+   ![image 23.png](./assets/image%2023.png)
 
 + ## List
 
@@ -445,7 +445,7 @@
 
 + ## Stack
 
-   ![image 24.png](./Hello%20Algo-assets/image%2024.png)
+   ![image 24.png](./assets/image%2024.png)
 
    - 具有 FILO 的特性
 
@@ -477,11 +477,11 @@
 
          - 需要額外的空間給指針
 
-      ![image 25.png](./Hello%20Algo-assets/image%2025.png)
+      ![image 25.png](./assets/image%2025.png)
 
-      ![image 26.png](./Hello%20Algo-assets/image%2026.png)
+      ![image 26.png](./assets/image%2026.png)
 
-      ![image 27.png](./Hello%20Algo-assets/image%2027.png)
+      ![image 27.png](./assets/image%2027.png)
 
    - 基於 array 的實現，我們可以將 array 的尾部當作 the top of the stack，pop 跟 push 都作用在尾端，時間複雜度是 $O(1)$。為了應對元素可能超出 array 的 capacity，我們可以使用 list，就不用處理 array 擴容的問題
 
@@ -493,17 +493,17 @@
 
          - 分配但沒用到的空間會造成浪費
 
-      ![image 28.png](./Hello%20Algo-assets/image%2028.png)
+      ![image 28.png](./assets/image%2028.png)
 
-      ![image 29.png](./Hello%20Algo-assets/image%2029.png)
+      ![image 29.png](./assets/image%2029.png)
 
-      ![image 30.png](./Hello%20Algo-assets/image%2030.png)
+      ![image 30.png](./assets/image%2030.png)
 
 + ## Queue
 
    - FIFO，就像排隊一樣，先到的人先處理
 
-      ![image 31.png](./Hello%20Algo-assets/image%2031.png)
+      ![image 31.png](./assets/image%2031.png)
 
    - 加入隊列稱為”Enqueue”，操作常稱為 “push”
 
@@ -527,11 +527,11 @@
 
    - 基於 linked list 的實現，head node 用來移除節點，tail node 用來添加節點
 
-      ![image 32.png](./Hello%20Algo-assets/image%2032.png)
+      ![image 32.png](./assets/image%2032.png)
 
-      ![image 33.png](./Hello%20Algo-assets/image%2033.png)
+      ![image 33.png](./assets/image%2033.png)
 
-      ![image 34.png](./Hello%20Algo-assets/image%2034.png)
+      ![image 34.png](./assets/image%2034.png)
 
    - 基於 array 的實現，在 array 中要刪除首個元素的時間複雜度是 $O(n)$，這會導致 Dequeue 的效率極低，為了解決這個問題，我們可以用一個變數 `front` 指向 queue 的第一個元素，然後用一個變數 `size` 用來記錄 queue 的長度，`rear = front + size` ，這樣就可以知道 queue 的結尾在哪
 
@@ -541,15 +541,15 @@
 
       - 為避免 `front` 跟 `rear` 超出索引範圍，我們可以設計一個機制，當索引在抵達底部時回到起始點，形成“circular array”的樣子，這可以透過“取餘”來達成
 
-      ![image 35.png](./Hello%20Algo-assets/image%2035.png)
+      ![image 35.png](./assets/image%2035.png)
 
-      ![image 36.png](./Hello%20Algo-assets/image%2036.png)
+      ![image 36.png](./assets/image%2036.png)
 
-      ![image 37.png](./Hello%20Algo-assets/image%2037.png)
+      ![image 37.png](./assets/image%2037.png)
 
 + ## Double-ended queue
 
-   ![image 38.png](./Hello%20Algo-assets/image%2038.png)
+   ![image 38.png](./assets/image%2038.png)
 
    - Deque 有更高的靈活性，頭跟尾部都能夠添加跟移除元素
 
@@ -573,33 +573,33 @@
 
    - 使用 linked list 實現，我們可以使用 doubly linked list
 
-      ![image 39.png](./Hello%20Algo-assets/image%2039.png)
+      ![image 39.png](./assets/image%2039.png)
 
-      ![image 40.png](./Hello%20Algo-assets/image%2040.png)
+      ![image 40.png](./assets/image%2040.png)
 
-      ![image 41.png](./Hello%20Algo-assets/image%2041.png)
+      ![image 41.png](./assets/image%2041.png)
 
-      ![image 42.png](./Hello%20Algo-assets/image%2042.png)
+      ![image 42.png](./assets/image%2042.png)
 
-      ![image 43.png](./Hello%20Algo-assets/image%2043.png)
+      ![image 43.png](./assets/image%2043.png)
 
    - 使用 array 實現，也可以透過 circular array 的思路來解決
 
-      ![image 44.png](./Hello%20Algo-assets/image%2044.png)
+      ![image 44.png](./assets/image%2044.png)
 
-      ![image 45.png](./Hello%20Algo-assets/image%2045.png)
+      ![image 45.png](./assets/image%2045.png)
 
-      ![image 46.png](./Hello%20Algo-assets/image%2046.png)
+      ![image 46.png](./assets/image%2046.png)
 
-      ![image 47.png](./Hello%20Algo-assets/image%2047.png)
+      ![image 47.png](./assets/image%2047.png)
 
-      ![image 48.png](./Hello%20Algo-assets/image%2048.png)
+      ![image 48.png](./assets/image%2048.png)
 
 + ## Hash Table
 
    - Hash Table 建立 key 跟 value 直接的映射，這種映射關係是 1 對 1 的，也就是一個 key 只會找到一個 value
 
-      ![image 49.png](./Hello%20Algo-assets/image%2049.png)
+      ![image 49.png](./assets/image%2049.png)
 
    - Hash table 的 CRUD 操作都十分高效，時間複雜度是 $O(1)$
 
@@ -613,7 +613,7 @@
 
       然後再將 key 跟 value 儲存在計算出來的索引位置
 
-      ![image 50.png](./Hello%20Algo-assets/image%2050.png)
+      ![image 50.png](./assets/image%2050.png)
 
 + ## Hash Table 的簡易實現
 
@@ -625,11 +625,11 @@
 
    - Hash 函數在做的事是將大空間的數值映射到有限的小空間，所以在理論上會有碰撞的風險，而這個碰撞就稱為「Hash Collision」
 
-      ![image 51.png](./Hello%20Algo-assets/image%2051.png)
+      ![image 51.png](./assets/image%2051.png)
 
    - 當輸出的空間越大，碰撞的機會就越小，這個很好理解，你可以想像你要放置東西到櫥櫃中，那這個櫥櫃當然越大越好，越大的空間放東西就越不會東西必須擠在一起，回到 hash table，我們可以透過 resize 來擴大輸出空間來減少  hash collision 的機率
 
-      ![image 52.png](./Hello%20Algo-assets/image%2052.png)
+      ![image 52.png](./assets/image%2052.png)
 
    - Hash table 的 resize 除了要找到夠大的空間將數值搬過去（就像 array 做的那樣），還需要重新計算每個 key 的索引，又更加的耗時，所以一般程式語言會保留足夠大的空間避免觸發 resize 
 
@@ -651,7 +651,7 @@
 
    - 每個 bucket 都是一個 linked list，然後將 head node 儲存在 index 位置，collision 時就儲存在這 linked list 下，當然，這個 linked list 會有長度限制，以 Go 語言來說，這個長度是 8，超出 8 之後的元素都會被放到 collision bucket，直到這個 bucket 的容量達到 load factor 才會觸發 resize
 
-      ![image 53.png](./Hello%20Algo-assets/image%2053.png)
+      ![image 53.png](./assets/image%2053.png)
 
    - 搜尋：先透過索引找到 head node，然後遍歷 linked list 找到 key
 
@@ -675,7 +675,7 @@
 
    #### Linear Probing
 
-   ![image 54.png](./Hello%20Algo-assets/image%2054.png)
+   ![image 54.png](./assets/image%2054.png)
 
    - 當發生 hash collision 時，會採用固定步長往後來進行搜尋
 
@@ -687,7 +687,7 @@
 
    - 在 Open Addressing 中，我們是不能直接刪除元素的，這會導致搜尋元素遇到 empty bucket 而中斷，
 
-      ![image 55.png](./Hello%20Algo-assets/image%2055.png)
+      ![image 55.png](./assets/image%2055.png)
 
       取而代之，我們採用「lazy deletion」的技巧，透過用一個 constant（常量）`TOMBSTONE` 來取代刪除過的元素，這樣在搜尋時便可以知道我們要繼續往下，而不是停止於此。 不過在插入上，我們可以直接將`TOMBSTONE` 視為 empty bucket，並插入於此，而不是像搜尋一樣跳過。
 
@@ -725,7 +725,7 @@
 
    - 在最差的情況下，有可能每個 key 計算都是同一個索引位置，導致時間複雜度退化到 $O(n)$
 
-      ![image 56.png](./Hello%20Algo-assets/image%2056.png)
+      ![image 56.png](./assets/image%2056.png)
 
    - hash 算法在設計上有以下目標：
 
@@ -755,7 +755,7 @@
 
    - 以下是詳細說明
 
-      ![Screenshot 2024-02-26 at 9.57.38 PM.png](./Hello%20Algo-assets/Screenshot%202024-02-26%20at%209.57.38%20PM.png)
+      ![Screenshot 2024-02-26 at 9.57.38 PM.png](./assets/Screenshot%202024-02-26%20at%209.57.38%20PM.png)
 
    - 不同資料類型有不同的 hash 計算方式，以 Python 舉例來說：
 
@@ -775,11 +775,11 @@
 
 + ## 常見的 hash algorithm
 
-   ![Screenshot 2024-02-26 at 9.59.12 PM.png](./Hello%20Algo-assets/Screenshot%202024-02-26%20at%209.59.12%20PM.png)
+   ![Screenshot 2024-02-26 at 9.59.12 PM.png](./assets/Screenshot%202024-02-26%20at%209.59.12%20PM.png)
 
 + ## Binary Tree
 
-   ![image 57.png](./Hello%20Algo-assets/image%2057.png)
+   ![image 57.png](./assets/image%2057.png)
 
    - Binary Tree 的基本單位是節點，節點包含
 
@@ -793,7 +793,7 @@
 
    - 在 binary tree 中，除了「leaf node」以外的 node 都具有「child node」跟「non-empty subtree」
 
-   ![image 58.png](./Hello%20Algo-assets/image%2058.png)
+   ![image 58.png](./assets/image%2058.png)
 
    - binary tree 常用術語：
 
@@ -827,29 +827,29 @@
 
       - 樹的 level 為 $n$，則總節點數為 $2^n+1$
 
-      ![image 59.png](./Hello%20Algo-assets/image%2059.png)
+      ![image 59.png](./assets/image%2059.png)
 
    - Complete Binary Tree
 
       - 只剩底層 node 沒有被填滿，心法：靠左對齊
 
-      ![image 60.png](./Hello%20Algo-assets/image%2060.png)
+      ![image 60.png](./assets/image%2060.png)
 
    - Full Binary Tree
 
       - Full：全滿，大家 degree 都是 2
 
-      ![image 61.png](./Hello%20Algo-assets/image%2061.png)
+      ![image 61.png](./assets/image%2061.png)
 
    - Balancde Binary Tree
 
       - 任意 left subtree 跟 right subtree 的高度的絕對值不超過 1
 
-      ![image 62.png](./Hello%20Algo-assets/image%2062.png)
+      ![image 62.png](./assets/image%2062.png)
 
    - 最理想的情況下，binary tree 可以發揮一分為二的優勢，但在最差的情況下會退化成 linked list，這時所有操作都會退化成 $O(n)$
 
-      ![image 63.png](./Hello%20Algo-assets/image%2063.png)
+      ![image 63.png](./assets/image%2063.png)
 
    
 
@@ -859,7 +859,7 @@
 
       - Depth-First Search, DFS：深度優先，先走到底再回頭
 
-         ![image 64.png](./Hello%20Algo-assets/image%2064.png)
+         ![image 64.png](./assets/image%2064.png)
 
          - Pre-Order Traversal：訪問的當下就記錄自己
 
@@ -873,7 +873,7 @@
 
       - Breadth-First Search, BFS：廣度優先，一層一層往下探索
 
-         ![image 65.png](./Hello%20Algo-assets/image%2065.png)
+         ![image 65.png](./assets/image%2065.png)
 
          - Level-Order Traversal：每一層都從左到右依序訪問節點。通常會借助 Queue FIFO 的特性來完成。
 
@@ -885,7 +885,7 @@
 
 + ## Binary Search Tree
 
-   ![image 66.png](./Hello%20Algo-assets/image%2066.png)
+   ![image 66.png](./assets/image%2066.png)
 
    - 要滿足 binary search tree 的話，條件是 
 
@@ -897,13 +897,13 @@
 
       - Search：從 root node 開始判斷，如果大於則搜尋右邊，小於則搜尋左邊，重複這個操作，直到搜尋到一樣的並回傳
 
-         ![image 67.png](./Hello%20Algo-assets/image%2067.png)
+         ![image 67.png](./assets/image%2067.png)
 
          - Time Complexity $O(log N)$：每次搜尋都會刪去一半的選項
 
       - Insert：不斷進行與搜尋一樣的判斷，找到 `None（空位）`之後插入。若搜尋到一樣的數值則直接跳出。可以注意到我們會需要 `pre` 這個指針用來記錄上一個節點，確保插入時可以更新 `parent node`
 
-         ![image 68.png](./Hello%20Algo-assets/image%2068.png)
+         ![image 68.png](./assets/image%2068.png)
 
          - Time Complexity $O(logN)$：跟搜尋一樣的時間
 
@@ -911,30 +911,30 @@
 
          - degree = 0：代表刪除的節點是 leaf nod，可以直接刪除
 
-            ![image 69.png](./Hello%20Algo-assets/image%2069.png)
+            ![image 69.png](./assets/image%2069.png)
 
          - degree = 1：將 child node 往上移即可
 
-            ![image 70.png](./Hello%20Algo-assets/image%2070.png)
+            ![image 70.png](./assets/image%2070.png)
 
          - degree = 2：為了要確保 binary search tree 的特性（左 < root < 右），我們在刪除時要將該節點的 subtree 當中合適的節點上移，取代被刪除的節點。合適的節點包括：`right subtree 的最小節點`跟 `left subtree 的最大節點`
 
-            ![image 71.png](./Hello%20Algo-assets/image%2071.png)
+            ![image 71.png](./assets/image%2071.png)
 
-            ![image 72.png](./Hello%20Algo-assets/image%2072.png)
+            ![image 72.png](./assets/image%2072.png)
 
-            ![image 73.png](./Hello%20Algo-assets/image%2073.png)
+            ![image 73.png](./assets/image%2073.png)
 
-            ![image 74.png](./Hello%20Algo-assets/image%2074.png)
+            ![image 74.png](./assets/image%2074.png)
 
          - Time Complexity $O(logN)$：搜尋要 $O(logN)$，搜尋到 node 後要執行 in-order 搜尋取代的 node 也需要 $O(logN)$，所以加總是 $O(logN)$
 
       - 在 binary search tree 當中， 由於 左 < root < 右 的特性， in-order 的結果會是由小排到大，對於需要 ascending order 的情況來說，可以在 $O(n)$ 的時間內完成，而且不需要額外操作，非常高效
 
-         ![image 75.png](./Hello%20Algo-assets/image%2075.png)
+         ![image 75.png](./assets/image%2075.png)
 
       - Binary tree 的 CRUD 操作都是 $O(logN)$，穩定且高效，但不適合有大量 insert 跟 delete 的場景，有可能會使 binary search tree 退化成 linked list，導致 CRUD 操作退化成 $O(n)$
 
-         ![image 76.png](./Hello%20Algo-assets/image%2076.png)
+         ![image 76.png](./assets/image%2076.png)
 
       - 在面對 array 跟 binary search tree 的取捨時，如果 search 的頻率較低，且可能有大量 insert 跟 delete 時，選擇 array 會是比較好的選擇。注意：上述情況適用於基本的 BST，對於衍生的 AVL tree 跟 RBTree，有針對場景特殊優化，保持一樣高效的操作
