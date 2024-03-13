@@ -59,10 +59,10 @@ func (h *myMaxHeap) Pop() any {
 func (h *myMaxHeap) SiftDown(i int) {
 	for {
 		l, r, max := h.Left(i), h.Right(i), i
-		if l < h.size() && (*h)[l].(int) > (*h)[i].(int) {
+		if l < h.size() && (*h)[l].(int) > (*h)[max].(int) {
 			max = l
 		}
-		if r < h.size() && (*h)[r].(int) > (*h)[i].(int) {
+		if r < h.size() && (*h)[r].(int) > (*h)[max].(int) {
 			max = r
 		}
 		if max == i {
@@ -71,4 +71,23 @@ func (h *myMaxHeap) SiftDown(i int) {
 		h.Swap(i, max)
 		i = max
 	}
+}
+
+func newMaxHeap1(nums []int) *myMaxHeap {
+	tmp := make(myMaxHeap, 0)
+	for _, n := range nums {
+		tmp.Push(n)
+	}
+	return &tmp
+}
+
+func newMaxHeap2(nums []int) *myMaxHeap {
+	tmp := make(myMaxHeap, len(nums))
+	for idx, val := range nums {
+		tmp[idx] = val
+	}
+	for i := tmp.Parent(tmp.size() - 1); i >= 0; i-- {
+		tmp.SiftDown(i)
+	}
+	return &tmp
 }
